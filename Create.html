@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MY APPLICATION</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img style="width: 8%;height: 60px;"  src="img/credit pic.jpg" />
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+
+	  <a class="nav-item nav-link" href="Contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+</nav>
+<br>
+
+	
+<body onload="doShowAll()">
+
+
+<center>
+
+
+
+	<h1>ADD LIST</h1>
+	<br>
+	<div id="search-panel" class="panel">
+	<div class="col-6">
+	
+	<form class="needs-validation" novalidate>
+	 <label for="validationCustom01">Creditor name:</label>
+	 <input type="text" class="form-control" id="validationCustom01" required name="firstname">
+		<div class="invalid-feedback">
+          Please choose a username.
+        </div>
+	 <label for="validationCustom02">Date of Credit:</label>
+	 <input type="date" class="form-control" id="validationCustom02" required max="2020-12-31">
+		<div class="invalid-feedback">
+          Please input a valid date.
+        </div>
+	<label for="validationCustom03"> Amount:</label>
+	 <input type="number" class="form-control" id="validationCustom03" required>
+	 <div class="invalid-feedback">
+          Please input number only.
+        </div>
+	 <label for="validationCustom04">Date of Paid:</label>
+	 <input type="date" class="form-control" id="validationCustom04" required max="2020-12-31">
+	 <div class="invalid-feedback">
+          Please input date.
+        </div>
+	 <label for="validationCustom05">Amount Paid:</label>
+	 <input type="number" class="form-control" id="validationCustom05" required>
+	 <div class="invalid-feedback">
+          Please input number only.
+        </div>
+	 <label for="validationCustom06">Balance:</label>
+	 <input type="number" class="form-control" id="validationCustom06" required>
+	 <div class="invalid-feedback">
+          Please input.
+        </div>
+	<br>
+	<br>
+<button type="submit" class="btn btn-primary">Save</button>
+  &nbsp;&nbsp;
+	<button type="submit" class="btn btn-primary">Cancel</button>
+	 <br>
+	 <br>
+		<a href="homepage.html"><button type="button" class="btn btn-primary">Done</button></a>
+  
+  
+  <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+  
+  
+</form>
+
+
+</center>
+</div>
+		
+
+
+
+
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/popper.min.js" ></script>
+<script src="js/bootstrap.min.js" ></script>
+
+
+</body>
+</html>
